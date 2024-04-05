@@ -25,7 +25,7 @@
     }
 }
 .hero__content {
-   flex: 1 1 65%;
+   flex: 1 1 70%;
 }
 .hero__link {
     padding: 18px 29px;
@@ -59,6 +59,11 @@
         margin-bottom: 20px;
     }
 }
+@media screen and (max-width: 479.98px) {
+    .hero__title {
+        font-size: 34px;
+    }
+}
 .hero__subtitle {
     max-width: 500px;
     margin-bottom: 60px;
@@ -77,9 +82,14 @@
     background-color: var(--button-color);
     text-transform: uppercase;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 991.98px) {
     .hero__button {
         margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .hero__button {
+        padding: 20px 80px;
     }
 }
 .hero__form {
@@ -88,7 +98,7 @@
 }
 .hero__input {
     min-width: 150px;
-    max-width: 1068px;
+    max-width: 1100px;
     flex-grow: 1;
     padding: 49px 56px;
     border-radius: 4px 0px 0px 0px;
@@ -99,10 +109,20 @@
         font-weight: 500;
     }
 }
+@media screen and (max-width: 991.98px) {
+    .hero__input {
+        padding: 20px;
+    }
+}
 .hero__button-search {
    position: absolute;
    top: 40%;
    right: 5%;
+}
+@media screen and (max-width: 991.98px) {
+    .hero__button-search {
+        top: 33%;
+    }
 }
 .hero__video {
     display: flex;
@@ -110,9 +130,10 @@
     justify-content: flex-end;
     flex: 1 1 30%;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 991.98px) {
     .hero__video {
-        align-items: center;
+        flex: 1 1 100%;
+        align-self: center;
     }
 }
 .hero__video-container {
@@ -139,11 +160,16 @@
     background-color: var(--button-color);
     border-radius: 0px 4px 0px 0px;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 991.98px) {
     .hero__video-navigations {
         max-width: 502px;
         min-width: 150px;
         flex-grow: 1;
+    }
+}
+@media screen and (max-width: 479.98px) {
+    .hero__video-navigations {
+        padding: 20px 0px;
     }
 }
 .hero__left-button {
