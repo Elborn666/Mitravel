@@ -1,5 +1,7 @@
 .signup__container {
-    background-image: url('../img/roks.webp');
+    background: 
+		linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.8)), 
+		url('../img/roks.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

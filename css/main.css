@@ -508,7 +508,7 @@ a {
   }
 }
 .fly {
-  background-image: url("../img/fly.webp");
+  background: linear-gradient(180deg, rgba(28, 46, 59, 0) 0%, #091117 100%), url("../img/fly.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -729,10 +729,11 @@ a {
   max-height: 100%;
   object-fit: contain;
   border-radius: 8px;
+  filter: brightness(80%);
 }
 
 .signup__container {
-  background-image: url("../img/roks.webp");
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.8)), url("../img/roks.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

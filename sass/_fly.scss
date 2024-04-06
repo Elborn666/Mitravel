@@ -1,5 +1,6 @@
 .fly {
-    background-image: url('../img/fly.webp');
+    // background-image: url('../img/fly.webp');
+    background: linear-gradient(180deg, rgba(28, 46, 59, 0.00) 0%, #091117 100%),url('../img/fly.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
