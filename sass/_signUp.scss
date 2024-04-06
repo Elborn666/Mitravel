@@ -1,0 +1,162 @@
+.signup__container {
+    background-image: url('../img/roks.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.signup__body {
+    display: flex;
+}
+@media screen and (max-width: 767.98px) {
+    .signup__body {
+        flex-direction: column;
+    }
+}
+.signup__content {
+    margin-left: 135px;
+    padding-top: 336px;
+    padding-bottom: 178px;
+    flex: 1 1 60%;
+}
+@media screen and (max-width: 1439.98px) {
+    .signup__content {
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width: 1199.98px) {
+    .signup__content {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 991.98px) {
+    .signup__content {
+       padding-top: 180px;
+       flex: 1 1 50%;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .signup__content {
+       padding-top: 90px;
+       padding-bottom: 20px;
+       flex: 1 1 100%;
+    }
+}
+.singup__title {
+    max-width: 368px;
+    margin-bottom: 40px;
+}
+.singup__text {
+    max-width: 368px;
+}
+.signup__form {
+    flex: 1 1 40%;
+    margin-right: 133px;
+    margin-bottom: -96px;
+    align-self: flex-end;
+}
+@media screen and (max-width: 1439.98px) {
+    .signup__form {
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width: 1199.98px) {
+    .signup__form {
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 991.98px) {
+    .signup__form {
+        margin-left: 20px;
+        margin-bottom: 0px;
+        flex: 1 1 50%;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .signup__form {
+        align-self: center;
+        margin-left: 0px;
+        flex: 1 1 100%;
+        width: 100%;
+    }
+}
+.form__singup {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+    border-radius: 8px 8px 8px 8px;
+}
+.signup__lable-email {
+    display: flex;
+    flex-direction: column;
+    margin-top: 76px;
+    padding: 0px 72px;
+    color: var(--blue-color);
+    text-transform: uppercase;
+}
+@media screen and (max-width: 767.98px) {
+    .signup__lable-email {
+        margin-top: 32px;
+    }
+}
+@media screen and (max-width: 479.98px) {
+    .signup__lable-email {
+        padding: 0px 20px;
+    }
+}
+.signup__input-email,
+.signup__input-name {
+    margin-top: 6px;
+    border: none;
+    border-bottom: 1px solid rgba(28, 46, 61, 0.3);
+    outline: none;
+}
+@media screen and (max-width: 767.98px) {
+    .signup__input-email,
+    .signup__input-name {
+        margin-top: 0px;
+    }
+}
+.signup__lable-name,
+.signup__lable-phone {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    padding: 0px 72px;
+    color: var(--blue-color);
+    text-transform: uppercase;
+}
+@media screen and (max-width: 767.98px) {
+    .signup__lable-name,
+    .signup__lable-phone {
+        margin-top: 16px;
+    }
+}
+@media screen and (max-width: 479.98px) {
+    .signup__lable-name,
+    .signup__lable-phone {
+        padding: 0px 20px;
+    }
+}
+.signup__input-phone {
+    margin-top: 6px;
+    margin-bottom: 66px;
+    border: none;
+    border-bottom: 1px solid rgba(28, 46, 61, 0.3);
+    outline: none;
+}
+@media screen and (max-width: 767.98px) {
+    .signup__input-phone {
+        margin-top: 0px;
+        margin-bottom: 32px;
+    }
+}
+.singup__button {
+    padding: 41px 100px;
+    color: var(--white-color);
+    border-radius: 0px 0px 8px 8px;
+}
+@media screen and (max-width: 767.98px) {
+    .singup__button {
+        padding: 20px 50px;
+    }
+}
