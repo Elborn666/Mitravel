@@ -96,13 +96,46 @@ body {
 }
 
 .button-blue {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
   font-size: 12px;
   letter-spacing: 2.182px;
   text-transform: uppercase;
   border-radius: 8px;
   background: var(--button-color);
+  transition: 1.5s;
 }
 
+@media screen and (min-width: 991.98px) {
+  .button-blue:before, .button-blue:after {
+    content: "";
+    position: absolute;
+    height: 200px;
+    left: -50%;
+    margin-top: -100px;
+    top: 50%;
+    width: 350px;
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: -1;
+    transform: scale(0);
+  }
+  .button-blue:before {
+    background: #ffeede;
+    transition: 1.5s ease-out;
+  }
+  .button-blue:after {
+    transition: 0.4s ease-in 0.3s;
+  }
+  .button-blue:hover {
+    color: var(--blue-color);
+  }
+  .button-blue:hover:before, .button-blue:hover:after {
+    opacity: 1;
+    transform: scale(4);
+  }
+}
 .button-red {
   font-size: 12px;
   letter-spacing: 2px;
@@ -184,7 +217,7 @@ a {
 }
 
 .header__container {
-  padding-top: 53px;
+  padding-top: 32px;
   padding-bottom: 20px;
 }
 
@@ -192,17 +225,37 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 10px;
 }
 
 .header__list {
   display: flex;
-  align-items: center;
   column-gap: 40px;
 }
 
 .header__item-link {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: inherit;
+  transition: background-color 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 991.98px) {
+  .header__item-link:hover {
+    background-color: var(--red-color);
+  }
+}
+.header__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
 }
 
 .header__logo {
@@ -224,7 +277,7 @@ a {
     padding-top: 20px;
   }
   .header__list {
-    column-gap: 20px;
+    column-gap: 0px;
   }
 }
 .hero {
@@ -267,8 +320,15 @@ a {
   text-transform: uppercase;
   border-radius: 24px;
   background-color: var(--red-color);
+  transition: background-color 750ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 991.98px) {
+  .hero__link:hover {
+    color: var(--red-color);
+    background-color: var(--white-color);
+  }
+}
 .hero__title {
   margin-bottom: 40px;
   margin-top: 40px;
@@ -546,8 +606,15 @@ a {
   text-transform: uppercase;
   border-radius: 24px;
   background-color: var(--red-color);
+  transition: background-color 750ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 991.98px) {
+  .fly__link:hover {
+    color: var(--red-color);
+    background-color: var(--white-color);
+  }
+}
 .fly__title {
   margin-bottom: 16px;
   margin-top: 33px;
@@ -851,8 +918,16 @@ a {
   border: none;
   border-bottom: 1px solid rgba(28, 46, 61, 0.3);
   outline: none;
+  transition: border 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 991.98px) {
+  .signup__input-email:hover, .signup__input-email:focus,
+.signup__input-name:hover,
+.signup__input-name:focus {
+    border-bottom: 1px solid var(--blue-color);
+  }
+}
 @media screen and (max-width: 767.98px) {
   .signup__input-email,
 .signup__input-name {
@@ -887,8 +962,14 @@ a {
   border: none;
   border-bottom: 1px solid rgba(28, 46, 61, 0.3);
   outline: none;
+  transition: border 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 991.98px) {
+  .signup__input-phone:hover, .signup__input-phone:focus {
+    border-bottom: 1px solid var(--blue-color);
+  }
+}
 @media screen and (max-width: 767.98px) {
   .signup__input-phone {
     margin-top: 0px;
@@ -1204,8 +1285,15 @@ a {
   color: var(--grey-color);
   font-size: 14px;
   font-weight: 500;
+  transition: color 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 991.98px) {
+  .footer__link:hover {
+    color: var(--blue-color);
+    text-decoration: underline;
+  }
+}
 .footer__form {
   display: flex;
   flex-direction: column;
@@ -1233,6 +1321,7 @@ a {
   padding: 23px 31px;
   border-radius: 8px;
   border: 1px solid #c4c2c2;
+  transition: border 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__input::placeholder {
   color: #1B1916;
@@ -1241,6 +1330,11 @@ a {
   opacity: 0.5;
 }
 
+@media screen and (min-width: 991.98px) {
+  .footer__input:hover, .footer__input:focus {
+    border: 1px solid var(--blue-color);
+  }
+}
 @media screen and (max-width: 767.98px) {
   .footer__input {
     width: 280px;
@@ -1288,8 +1382,16 @@ a {
 .footer__service,
 .footer__privacy {
   color: var(--grey-color);
+  transition: color 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 991.98px) {
+  .footer__service:hover,
+.footer__privacy:hover {
+    color: var(--blue-color);
+    text-decoration: underline;
+  }
+}
 .swiper {
   width: 600px;
   height: 300px;

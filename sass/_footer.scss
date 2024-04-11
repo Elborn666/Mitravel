@@ -73,6 +73,15 @@
     color: var(--grey-color);
     font-size: 14px;
     font-weight: 500;
+    transition: color 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 991.98px) {
+    .footer__link {
+        &:hover {
+            color: var(--blue-color);
+            text-decoration: underline;
+        }
+    }
 }
 .footer__form {
     display: flex;
@@ -101,11 +110,20 @@
     padding: 23px 31px;
     border-radius: 8px;
     border: 1px solid #c4c2c2;
+    transition:  border 550ms cubic-bezier(0.4, 0, 0.2, 1);
     &::placeholder {
         color: #1B1916;
         font-size: 16px;
         letter-spacing: -0.2px;
         opacity: 0.5;
+    }
+}
+@media screen and (min-width: 991.98px) {
+    .footer__input {
+        &:hover,
+        &:focus {
+            border: 1px solid var(--blue-color);
+        }
     }
 }
 @media screen and (max-width: 767.98px) {
@@ -150,4 +168,14 @@
 .footer__service,
 .footer__privacy {
     color: var(--grey-color);
+    transition: color 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 991.98px) {
+    .footer__service,
+    .footer__privacy {
+        &:hover {
+            color: var(--blue-color);
+            text-decoration: underline;
+        }
+    }
 }

@@ -35,6 +35,15 @@
     text-transform: uppercase;
     border-radius: 24px;
     background-color: var(--red-color);
+    transition: background-color 750ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 991.98px) {
+    .fly__link {
+        &:hover {
+            color: var(--red-color);
+            background-color: var(--white-color);
+        }
+    }
 }
 .fly__title {
     margin-bottom: 16px;
