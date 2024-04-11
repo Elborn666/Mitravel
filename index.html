@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/> SLIDER  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
@@ -23,7 +23,8 @@
                                 <img src="./icon/fb.svg" alt="facebook" class="header__social-icon">
                             </a>
                         </li>
-                        <li class="header__item"><a href="https://twitter.com/?lang=uk" target="_blank" class="header__item-link">
+                        <li class="header__item"><a href="https://twitter.com/?lang=uk" target="_blank"
+                                class="header__item-link">
                                 <img src="./icon/twitter.svg" alt="twitter" class="header__social-icon">
                             </a>
                         </li>
@@ -64,8 +65,26 @@
                         </div>
                         <div class="hero__video">
                             <div class="hero__video-container">
-                                <img src="./img/hero_video.webp" alt="moutain" class="hero__video-content">
-                                <img src="./img/play.png" alt="play icon" class="hero__video-play">
+                                <!-- Slider main container -->
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <img src="./img/hero_video.webp" alt="moutain" class="hero__video-content">
+                                            <img src="./img/play.png" alt="play icon" class="hero__video-play">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/hero_video.webp" alt="moutain" class="hero__video-content">
+                                            <img src="./img/play.png" alt="play icon" class="hero__video-play">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/hero_video.webp" alt="moutain" class="hero__video-content">
+                                            <img src="./img/play.png" alt="play icon" class="hero__video-play">
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="hero__video-navigations">
                                 <img src="./icon/arrow-left.svg" alt="left icon" class="hero__left-button">
@@ -167,6 +186,14 @@
                             <div class="video__content video__sand">
                                 <img src="./img/sand.webp" alt="desert" class="image">
                             </div>
+                            <!-- <div id="carousel" data-auto="true">
+                                <div id="scene">
+                                    <img src="./img/water.webp" alt="sea" class="carousel_item image">
+                                    <img src="./img/church.webp" alt="church" class="carousel_item image">
+                                    <p class="video__text">A Guide To Rocky Mountain Vacations</p>
+                                    <img src="./img/sand.webp" alt="desert" class="carousel_item image">
+                                </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -436,7 +463,9 @@
         </div>
     </div>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> SLIDER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/swiper.js"></script>
+    <!-- <script type="module" src="./js/slider.js"></script> -->
 </body>
 
 </html>

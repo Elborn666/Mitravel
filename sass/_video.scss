@@ -21,6 +21,11 @@
     color: var(--blue-color);
     text-align: center;
 }
+@media screen and (max-width: 767.98px) {
+    .video__title {
+        margin-bottom: 16px;
+    }
+}
 .video__subtitle {
     max-width: 634px;
     margin: 0 auto;
@@ -33,16 +38,28 @@
         margin-bottom: 40px;
     }
 }
+@media screen and (max-width: 767.98px) {
+    .video__subtitle {
+        margin-bottom: 20px;
+    }
+}
 .video__slider {
     display: flex;
     column-gap: 32px;
     align-items: center;
 }
-.video__content {
-    display: flex;
+@media screen and (max-width: 1199.98px) {
+    .video__slider {
+        column-gap: 16px;
+    }
 }
 .video__water {
     flex: 1 1 25%;
+}
+@media screen and (max-width: 991.98px) {
+    .video__water {
+       display: none;
+    }
 }
 .video__church {
     position: relative;
@@ -55,9 +72,20 @@
     font-size: 32px;
     font-weight: 700;
     line-height: 125%;
+    padding-right: 20px;
+}
+@media screen and (max-width: 767.98px) {
+    .video__text {
+        font-size: 24px;
+    }
 }
 .video__sand {
     flex: 1 1 25%;
+}
+@media screen and (max-width: 991.98px) {
+    .video__sand {
+        display: none;
+    }
 }
 .image {
     max-width: 100%;

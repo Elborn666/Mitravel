@@ -176,8 +176,9 @@
         flex-grow: 1;
     }
 }
-@media screen and (max-width: 479.98px) {
+@media screen and (max-width: 519.98px) {
     .hero__video-navigations {
+        width: 314px;
         padding: 20px 0px;
     }
 }

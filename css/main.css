@@ -182,29 +182,29 @@ a {
 
 @font-face {
   font-family: "SF Pro Display";
-  src: url("SFProDisplay-Medium.eot");
-  src: local("SF Pro Display Medium"), local("SFProDisplay-Medium"), url("SFProDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("SFProDisplay-Medium.woff2") format("woff2"), url("SFProDisplay-Medium.woff") format("woff"), url("SFProDisplay-Medium.ttf") format("truetype");
+  src: url("../fonts/SFProDisplay-Medium.eot");
+  src: local("SF Pro Display Medium"), local("SFProDisplay-Medium"), url("../fonts/SFProDisplay-Medium.eot") format("embedded-opentype"), url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff"), url("../fonts/SFProDisplay-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("SFProDisplay-Heavy.eot");
-  src: local("SF Pro Display Heavy"), local("SFProDisplay-Heavy"), url("SFProDisplay-Heavy.eot?#iefix") format("embedded-opentype"), url("SFProDisplay-Heavy.woff2") format("woff2"), url("SFProDisplay-Heavy.woff") format("woff"), url("SFProDisplay-Heavy.ttf") format("truetype");
+  src: url("../fonts/SFProDisplay-Heavy.eot");
+  src: local("SF Pro Display Heavy"), local("SFProDisplay-Heavy"), url("../fonts/SFProDisplay-Heavy.eot") format("embedded-opentype"), url("../fonts/SFProDisplay-Heavy.woff2") format("woff2"), url("../fonts/SFProDisplay-Heavy.woff") format("woff"), url("../fonts/SFProDisplay-Heavy.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("SFProDisplay-Bold.eot");
-  src: local("SF Pro Display Bold"), local("SFProDisplay-Bold"), url("SFProDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("SFProDisplay-Bold.woff2") format("woff2"), url("SFProDisplay-Bold.woff") format("woff"), url("SFProDisplay-Bold.ttf") format("truetype");
+  src: url("../fonts/SFProDisplay-Bold.eot");
+  src: local("SF Pro Display Bold"), local("SFProDisplay-Bold"), url("../fonts/SFProDisplay-Bold.eot") format("embedded-opentype"), url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff"), url("../fonts/SFProDisplay-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("SFProDisplay-Regular.eot");
-  src: local("SF Pro Display Regular"), local("SFProDisplay-Regular"), url("SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("SFProDisplay-Regular.woff2") format("woff2"), url("SFProDisplay-Regular.woff") format("woff"), url("SFProDisplay-Regular.ttf") format("truetype");
+  src: url("../fonts/SFProDisplay-Regular.eot");
+  src: local("SF Pro Display Regular"), local("SFProDisplay-Regular"), url("../fonts/SFProDisplay-Regular.eot") format("embedded-opentype"), url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff"), url("../fonts/SFProDisplay-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -472,8 +472,9 @@ a {
     flex-grow: 1;
   }
 }
-@media screen and (max-width: 479.98px) {
+@media screen and (max-width: 519.98px) {
   .hero__video-navigations {
+    width: 314px;
     padding: 20px 0px;
   }
 }
@@ -746,6 +747,11 @@ a {
   text-align: center;
 }
 
+@media screen and (max-width: 767.98px) {
+  .video__title {
+    margin-bottom: 16px;
+  }
+}
 .video__subtitle {
   max-width: 634px;
   margin: 0 auto;
@@ -759,20 +765,31 @@ a {
     margin-bottom: 40px;
   }
 }
+@media screen and (max-width: 767.98px) {
+  .video__subtitle {
+    margin-bottom: 20px;
+  }
+}
 .video__slider {
   display: flex;
   column-gap: 32px;
   align-items: center;
 }
 
-.video__content {
-  display: flex;
+@media screen and (max-width: 1199.98px) {
+  .video__slider {
+    column-gap: 16px;
+  }
 }
-
 .video__water {
   flex: 1 1 25%;
 }
 
+@media screen and (max-width: 991.98px) {
+  .video__water {
+    display: none;
+  }
+}
 .video__church {
   position: relative;
   flex: 1 1 50%;
@@ -785,12 +802,23 @@ a {
   font-size: 32px;
   font-weight: 700;
   line-height: 125%;
+  padding-right: 20px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .video__text {
+    font-size: 24px;
+  }
+}
 .video__sand {
   flex: 1 1 25%;
 }
 
+@media screen and (max-width: 991.98px) {
+  .video__sand {
+    display: none;
+  }
+}
 .image {
   max-width: 100%;
   max-height: 100%;
@@ -1393,10 +1421,16 @@ a {
   }
 }
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: 502px;
+  height: 280px;
 }
 
+@media screen and (max-width: 519.98px) {
+  .swiper {
+    width: 320px;
+    height: 175px;
+  }
+}
 .backdrop {
   position: fixed;
   z-index: 60;
